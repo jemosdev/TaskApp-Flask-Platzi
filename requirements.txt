@@ -1,0 +1,8 @@
+flask
+flask-bootstrap
+flask-wtf
+flask-testing
+blinker
+mysqlclient
+flask-SQLAlchemy
+flask-login
