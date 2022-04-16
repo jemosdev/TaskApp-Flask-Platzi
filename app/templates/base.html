@@ -4,9 +4,10 @@
 {% block head %}
     {{ super() }}
     <title>
-        {% block title %} Flask Platzi |{% endblock %}
+        {% block title %} Taskapp |{% endblock %}
     </title>
     <link rel="stylesheet" href="{{ url_for('static', filename= 'css/main.css') }}">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='images/favicon.ico') }}">
 {% endblock %}
 
 {% block body %}
