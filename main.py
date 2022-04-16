@@ -85,7 +85,7 @@ def delete(todo_id):
 
 @app.route('/todos/update/<todo_id>', methods= ['POST'])
 def update(todo_id):
-    #user_id= current_user.id  #arriba en route /<int:done>
+    #arriba en route /<int:done>
     todo_update= Todos.query.filter_by(todo_id= todo_id).first()
 
     if todo_update.done == 0:

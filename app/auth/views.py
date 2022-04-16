@@ -76,7 +76,6 @@ def signup():
             db.session.add(new_user)
             db.session.commit()
             user_data= UserData(username, password)
-            #user_put(user_data)
             user= UserModel(user_data)
             login_user(user)
             flash('Bienvenido(a)')
