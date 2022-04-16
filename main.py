@@ -9,9 +9,7 @@ import unittest
 from app import create_app
 from app.forms import TodoForm, DeleteTodoForm, UpdateTodoForm
 from app.models import db, Users, Todos, get_id_user
-#from app.mysql_service import insert_usuario, delete_usuario, get_usuarios, get_usuario
 from flask_login import login_required, current_user
-from flask_login.utils import login_user
 
 
 app = create_app()

@@ -6,12 +6,12 @@ from .config import Config
 from .auth import auth
 from flask_login import LoginManager
 from .models import db, UserModel
-#from .mysql_service import UserModel
+
 
 login_manager= LoginManager()
 login_manager.login_view= 'auth.login'
 
-
+#obtener el usuario directamente de la ddbb usa el metodo query en models
 @login_manager.user_loader          
 def load_user(username):
     return UserModel.query(username)
