@@ -1,4 +1,91 @@
-img {
+* {
+    outline: /*1px solid red;*/
+}
+
+.navbar-brand img {
     max-width: 50 px;
     max-height: 50px;
+}
+
+.navbar-brand {
+    font-size: 24px;
+    letter-spacing: 1px;
+}
+
+h1, h3 {
+    margin: 30px 110px;
+}
+
+h2 {
+    text-align: center;
+    margin: 10px;
+}
+
+/*--------------- Login   -------------*/
+
+.container-login {
+    min-height: 80vh;
+    margin: 30px 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.logo-login img {
+    display: inline-block;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.container-login-form {
+    display: grid;
+    Align-content: center;
+    padding: 10px;
+}
+
+/*--------------- Signup  -------------*/
+
+.container-signup {
+    min-height: 80vh;
+    margin: 30px 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.logo-signup img {
+    display: inline-block;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.container-signup-form {
+    display: grid;
+    Align-content: center;
+    padding: 10px;
+}
+
+/*--------------- Tasks  -------------*/
+
+.container-home-task {
+    background-image: url(../images/tasks1.png);
+    overflow: hidden;
+    opacity: 0.9;
+}
+
+.container-new-task {
+    margin-bottom: 10px;
+    margin: 30px 400px;
+}
+
+.show-tasks {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: 30px 100px;
+    outline: 1px solid #000;
+}
+
+.list_group {
+    background-image: url(../images/tasks2.jpg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
