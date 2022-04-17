@@ -8,7 +8,13 @@
 {% endblock %}
 
 {% block content %}
-    <div class="container">
-        {{ wtf.quick_form(login_form) }}
+    <div class="container-login">
+        <div class="logo-login">
+            <img src="../static/images/login.jpg" alt="image of login">
+        </div>
+        <div class="container-login-form">
+            <h2>Bienvenido!!</h2>
+            {{ wtf.quick_form(login_form) }}
+        </div>
     </div>
 {% endblock %}

@@ -1,3 +1,2 @@
 venv/
 app/taskapp2.db
-app/mysql_service.py

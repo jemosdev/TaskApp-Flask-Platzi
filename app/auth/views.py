@@ -5,7 +5,7 @@ from flask import session, flash, redirect, url_for, render_template
 from flask_login import login_user, logout_user, login_required
 from werkzeug.security import generate_password_hash, check_password_hash
 
-from app.models import db, UserData, get_user, UserModel, Users
+from app.models import db, UserData, get_id_user, get_user, UserModel, Users
 
 
 # declarar un nuevo view
@@ -20,13 +20,13 @@ def login():
         password= login_form.password.data
 
         user_doc= get_user(username)
-        user_id= user_doc.id
+        #user_id= get_id_user(username)
 
         if user_doc is not None:
             if check_password_hash(user_doc.password, password):
                 user_data= UserData(username, password)
                 user= UserModel(user_data)
-                session['id_user']= user_id
+                #session['id_user']= user_id
 
                 login_user(user)
                 flash('Bienvenido de nuevo')
@@ -76,7 +76,6 @@ def signup():
             db.session.add(new_user)
             db.session.commit()
             user_data= UserData(username, password)
-            #user_put(user_data)
             user= UserModel(user_data)
             login_user(user)
             flash('Bienvenido(a)')

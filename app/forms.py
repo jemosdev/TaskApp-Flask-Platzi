@@ -21,4 +21,4 @@ class DeleteTodoForm(FlaskForm):
 
 # creando una forma para modificar
 class UpdateTodoForm(FlaskForm):
-    submit= SubmitField('Tarea Completada')
+    submit= SubmitField('Actualizar')

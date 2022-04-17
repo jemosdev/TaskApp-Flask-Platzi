@@ -9,9 +9,7 @@ import unittest
 from app import create_app
 from app.forms import TodoForm, DeleteTodoForm, UpdateTodoForm
 from app.models import db, Users, Todos, get_id_user
-#from app.mysql_service import insert_usuario, delete_usuario, get_usuarios, get_usuario
 from flask_login import login_required, current_user
-from flask_login.utils import login_user
 
 
 app = create_app()
@@ -87,7 +85,7 @@ def delete(todo_id):
 
 @app.route('/todos/update/<todo_id>', methods= ['POST'])
 def update(todo_id):
-    #user_id= current_user.id  #arriba en route /<int:done>
+    #arriba en route /<int:done>
     todo_update= Todos.query.filter_by(todo_id= todo_id).first()
 
     if todo_update.done == 0:

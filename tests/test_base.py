@@ -1,7 +1,7 @@
 from flask_testing import TestCase
 from flask import current_app, url_for
 from main import app
-#from app.models import db
+from app.models import db
 
 class MainTest(TestCase):
     # regresar una aplicacion app de flask
@@ -20,16 +20,15 @@ class MainTest(TestCase):
         self.assertTrue(current_app.config['TESTING'])
 
     def test_index_redirects(self):
-        # prueba que la app redirige a hello
+        # prueba que el index redirige a hello
         response= self.client.get(url_for('index'))
 
         self.assertRedirects(response, url_for('hello'))
 
-    def test_hello_get(self):
-        # prueba que http es 200 cuando un get
+    def test_hello_required(self):
+        # prueba que http es 200 cuando se hace un get
         response= self.client.get(url_for('hello'))
-
-        self.assert200(response)
+        self.assertEquals(response.status_code, 302)
     
     def test_hello_post(self):
         # prueba para un post
@@ -52,9 +51,17 @@ class MainTest(TestCase):
     
     def test_auth_login_post(self):
         # prueba para un post
-        fake_form= {'username': 'fake', 'password': 'fake-password'}
+        fake_form= {'username': 'emmanuel', 'password': '12345678'}
         response= self.client.post(url_for('auth.login'), data= fake_form)
-        self.assertRedirects(response, url_for('index'))
+        self.assertRedirects(response, url_for('auth.signup'))
+        response= self.client.get(url_for('hello'))
+        self.assertEquals(response.status_code, 302)
 
-    #def test_app_database_exists(self):
-    #    self.assertIsNotNone(db)
+    def test_app_database_exists(self):
+        self.assertIsNotNone(db)
+    
+    def test_auth_signup_get(self):
+        # prueba que http es 200 cuando se hace un get
+        response= self.client.get(url_for('auth.signup'))
+        
+        self.assert200(response)

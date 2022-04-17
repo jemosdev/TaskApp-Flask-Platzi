@@ -17,9 +17,6 @@ class Users(db.Model):
     password= db.Column(db.String(50), nullable= False)
     tasks= db.relationship('Todos', backref='users', lazy= True)
 
-    #def __repr__(self):
-    #    return f'<User {self.username}>'
-
 
 class Todos(db.Model):
     __tablename__= 'todos'
