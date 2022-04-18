@@ -26,11 +26,11 @@ This project is a TODO app to manage tasks.
 ###**Views:**
 
 ####-Signup:
-![](D:\programming\platzi\codes\flask\app\static\images\signup-taskapp.jpg)
+![](https://github.com/jemosdev/TaskApp-Flask-Platzi/blob/main/app/static/images/signup-taskapp.jpg)
 ####-Login:
-![](D:\programming\platzi\codes\flask\app\static\images\login-taskapp.jpg)
+![](https://github.com/jemosdev/TaskApp-Flask-Platzi/blob/main/app/static/images/login-taskapp.jpg)
 ####-Tasks:
-![](D:\programming\platzi\codes\flask\app\static\images\making-tasks.jpg)
+![](https://github.com/jemosdev/TaskApp-Flask-Platzi/blob/main/app/static/images/making-tasks.jpg)
 
 
 ###Author: jemosdev
