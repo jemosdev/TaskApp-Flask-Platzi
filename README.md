@@ -32,5 +32,7 @@ This project is a TODO app to manage tasks.
 ####-Tasks:
 ![](https://github.com/jemosdev/TaskApp-Flask-Platzi/blob/main/app/static/images/making-tasks.jpg)
 
+Acknowledgements:
+Images - "Designed by slidesgo / Freepik" and "Designed by Vexels"
 
 ###Author: jemosdev
