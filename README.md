@@ -1,17 +1,17 @@
 ## TaskApp – Flask | Platzi
 This project is part of the Flask from platzi.
 
-###**Description:**
+### **Description:**
 This project is a TODO app to manage tasks.
 
-###**Requirements:**
+### *Requirements:*
 - Python
 - Flask
 - MySQL / SQLite
 - HTML
 -  CSS
 
-###**Installation:**
+### **Installation:**
 
 1. clone or download the repository:
 `$ git clone [url]`
@@ -23,17 +23,17 @@ This project is a TODO app to manage tasks.
 4. run it locally. The app will run on port 5000 by default
 `py main.py`
 
-###**Views:**
+### **Views:**
 
-####-Signup:
+#### -Signup:
 ![](https://github.com/jemosdev/TaskApp-Flask-Platzi/blob/main/app/static/images/signup-taskapp.jpg)
-####-Login:
+#### -Login:
 ![](https://github.com/jemosdev/TaskApp-Flask-Platzi/blob/main/app/static/images/login-taskapp.jpg)
-####-Tasks:
+#### -Tasks:
 ![](https://github.com/jemosdev/TaskApp-Flask-Platzi/blob/main/app/static/images/making-tasks.jpg)
 
-###**Acknowledgements:**
+### **Acknowledgements:**
 
 Images - "Designed by slidesgo / Freepik" and "Designed by Vexels"
 
-###Author: jemosdev
+### Author: jemosdev
