@@ -1,5 +1,10 @@
 __pycache__/
+__pycache__
 app/taskapp2.db
+*.pyc
+
+# mypy
+.mypy_cache/
 
 # Environments
 .env
@@ -9,3 +14,7 @@ venv/
 ENV/
 env.bak/
 venv.bak/
+
+# Flask stuff:
+instance/
+.webassets-cache

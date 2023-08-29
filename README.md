@@ -9,7 +9,7 @@ This project is a TODO app to manage tasks.
 - Flask
 - MySQL / SQLite
 - HTML
--  CSS
+- CSS
 
 ### **Installation:**
 
