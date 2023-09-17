@@ -1,10 +1,5 @@
 import os
-from flask import (app, 
-request, 
-redirect, 
-make_response, 
-render_template, 
-session, url_for, flash)
+from flask import app, request, redirect, make_response, render_template, session, url_for, flash
 import unittest
 from app import create_app
 from app.forms import TodoForm, DeleteTodoForm, UpdateTodoForm
