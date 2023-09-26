@@ -24,8 +24,9 @@ def not_found(error):
     return render_template('404.html', error= error)
 
 # create the ddbb if it does not exist
-@app.before_first_request
-def create_tables():
+#@app.before_first_request -deprecated
+#def create_tables():
+with app.app_context():
     db.create_all()
 
 @app.route('/')
